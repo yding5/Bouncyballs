@@ -165,7 +165,7 @@ if __name__ == '__main__':
                   data_folder=args.data,
                  )
     except KeyboardInterrupt:
-        torch.save(net.state_dict(), 'INTERRUPTED.pth')
+        torch.save(net.state_dict(), 'checkpoints/INTERRUPTED.pth')
         logging.info('Saved interrupt')
         try:
             sys.exit(0)
